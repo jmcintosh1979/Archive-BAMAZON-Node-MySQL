@@ -1,7 +1,7 @@
 // Variables needed to require the NPM packages and connection to database
 var mysql = require('mysql'),
     inquirer = require('inquirer'),
-    cliTable = require('cli-table'),
+    Table = require('cli-table3'),
     connection = mysql.createConnection({
       host: 'localhost',
       user: 'root',
@@ -20,8 +20,23 @@ var mysql = require('mysql'),
     var query = 'SELECT item_id, product_name, price FROM products';
 
     connection.query(query, function(err, data) {
+      // console.log(data)
+
+      var table = new Table({
+        head: ['ID', 'Product', 'Price'],
+        colWidths: [5, 50, 10]
+      });
+      
       for (var i = 0; i < data.length; i++) {
-        console.log(data[i]);
+        var productsArray = [
+                data[i].item_id, 
+                data[i].product_name,
+                data[i].price
+              ]
+
+        table.push(productsArray)
       }
-    })
+      console.log(table.toString())
+      }
+    )
   }
