@@ -1,0 +1,24 @@
+{
+  "name": "bamazon-node-mysql",
+  "version": "1.0.0",
+  "description": "An Amazon-like storefront with the MySQL skills learned in the UCF Coding Bootcamp",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmcintosh1979/BAMAZON-Node-MySQL.git"
+  },
+  "author": "Jeffrey McIntosh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmcintosh1979/BAMAZON-Node-MySQL/issues"
+  },
+  "homepage": "https://github.com/jmcintosh1979/BAMAZON-Node-MySQL#readme",
+  "dependencies": {
+    "cli-table3": "^0.5.1",
+    "inquirer": "^6.2.0",
+    "mysql": "^2.16.0"
+  }
+}
