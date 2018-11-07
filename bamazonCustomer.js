@@ -118,9 +118,8 @@ function runQuestions () {
                           '\n THANK YOU for shopping at BAMAZON!\n',
                           '\n---------------------------------------------------------------\n')
 
-              displayProducts();
-              process.exit();              
-
+              continueShopping();
+              
             })
           } 
           else {
@@ -136,4 +135,24 @@ function runQuestions () {
         });
       })
   })
+}
+
+function continueShopping() {
+  inquirer
+    .prompt(
+      {
+        name: 'contShopping',
+        type: 'list',
+        message: 'Would you like to continue shopping at BAMAZON?',          
+        choices: ['YES', 'NO']
+
+      })
+    .then(function(response) {
+      if (response.contShopping === 'YES') {
+        displayProducts()        
+      }
+      else {
+        process.exit()
+      }
+    })
 }
