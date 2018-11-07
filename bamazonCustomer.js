@@ -109,7 +109,7 @@ function runQuestions () {
               //   }
 
               // console.log(cost)
-              console.log('"\n---------------------------------------------------------------\n',
+              console.log('\n---------------------------------------------------------------\n',
                           '\nYour order has been accepted\n',
                           '\n(' + answer.qty + ') ' + data[0].product_name + ' @ $' + data[0].price.toFixed(2) + ' each \n',
                           '\n                                          sub-Total: $ ' + cost.toFixed(2),
