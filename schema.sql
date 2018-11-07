@@ -13,14 +13,14 @@ CREATE TABLE products (
 );
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ('MackBook Pro', 'Electronics', 1400.00, 6),
+VALUES ('MackBook Pro', 'Electronics', 1400.00, 5),
        ('Magic Keyboard (Black)', 'Electronics', 149.00, 10),
        ('Magic Trackpad (Black)', 'Electronics', 149.00, 10),
        ('Sauder Computer Desk', 'Furniture', 109.00, 5),
        ('Leick Corner Computer Desk', 'Furniture', 199.00, 5),
        ('Adjustable Standing Desk', 'Furniture', 899.00, 5),
        ("Don't Make Me Think (by Steven Krug)", 'Books', 40.00, 5),
-       ('The Joy of UX', 'Books', 39.99, 5),
+       ('The Joy of UX (by David Platt)', 'Books', 39.99, 5),
        ('HTML and CSS (by John Duckett)', 'Books', 29.99, 5),
        ('JavaScript and jQuery (by John Duckett)', 'Books', 29.99, 5),
        ('Pirates of Silicon Valley (DVD)', 'Movies', 2.99, 10),
